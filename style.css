@@ -119,7 +119,7 @@ section {
 
 .carousel {
   position: relative;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 40px auto;
   overflow: hidden;
   border-radius: 10px;
@@ -127,7 +127,8 @@ section {
 
 .carousel-slide {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 4); /* number of images */
+  animation: slide 12s infinite;
 }
 
 .carousel-slide img {
@@ -135,18 +136,11 @@ section {
   flex-shrink: 0;
 }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 30px;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
+/* Keyframes for auto sliding */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
 }
-
-.prev { left: 10px; }
-.next { right: 10px; }
