@@ -118,7 +118,7 @@ section {
 }
 
 .carousel {
-  max-width: 900px;
+  max-width: 100%;
   margin: 40px auto;
   overflow: hidden;
   border-radius: 10px;
@@ -127,7 +127,7 @@ section {
 .carousel-slide {
   display: flex;
   width: calc(100% * 4); /* Number of images */
-  animation: slide 12s infinite;
+  animation: slide 24s infinite;
 }
 
 .carousel-slide img {
@@ -135,6 +135,7 @@ section {
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 10px;
+  height: 250px;
 }
 
 /* Auto-slide animation */
@@ -145,3 +146,9 @@ section {
   75% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
+
+/* Make it fully responsive on mobile */
+@media (max-width: 768px) {
+  .carousel-slide img {
+    height: 200px;
+  }
