@@ -44,3 +44,75 @@ footer {
   padding: 15px;
   text-align: center;
 }
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about {
+  background: #f4f6f9;
+}
+
+.features {
+  background: white;
+}
+
+.feature-box {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  background: #eef3ff;
+  border-radius: 10px;
+}
+
+.vision {
+  background: #f4f6f9;
+}
+
+.cta {
+  background: linear-gradient(135deg, #001f3f, #004aad);
+  color: white;
+}
+
+.testimonials, .faq, .team, .gallery, .stats {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonial-box, .faq-box, .team-box {
+  background: #eef3ff;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.gallery-box img {
+  width: 250px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.stats-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stats-box div {
+  margin: 20px;
+  background: #f4f6f9;
+  padding: 30px 20px;
+  border-radius: 10px;
+  min-width: 150px;
+}
+
+.stats-box h3 {
+  font-size: 32px;
+  color: #004aad;
+}
+
+.stats-box p {
+  font-size: 16px;
+}
