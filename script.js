@@ -22,3 +22,4 @@ prevBtn.addEventListener('click', () => {
   if(counter < 0) counter = carouselImages.length - 1;
   updateCarousel();
 });
+
